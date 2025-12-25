@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<img id="avt" width="200">
+
+<script>
+function loadAvt() {
+  document.getElementById("avt").src =
+    "https://levantienmc09-code.github.io/ApiRandomAvt/api.html?t=" + Date.now();
+}
+
+loadAvt();
+</script>
+
+<button onclick="loadAvt()">Random lại</button>
+</body>
+</html>
