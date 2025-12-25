@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <script>
-fetch("https://raw.githubusercontent.com/USERNAME/REPO/main/avatars.json")
+fetch("https://raw.githubusercontent.com/levantienmc09-code/ApiRandomAvt/main/img.json")
   .then(r => r.json())
   .then(list => {
     const file = list[Math.floor(Math.random() * list.length)];
     location.href =
-      "https://raw.githubusercontent.com/USERNAME/REPO/main/avatars/" +
+      "https://raw.githubusercontent.com/levantienmc09-code/ApiRandomAvt/main/" +
       file + "?t=" + Date.now();
   });
 </script>
